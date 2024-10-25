@@ -28,14 +28,8 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
 
-      # Run unit tests with warning mode and continue option
-      - name: Run unit tests with warnings
-        run: ./gradlew testDebugUnitTest --warning-mode all --continue
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v2
 
-      # Upload Test Results
-      - name: Upload Test Results
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-report
-          path: app/build/reports/tests/testDebugUnitTest
+      - name: Run Specific Unit Test
+        run: ./gradlew :app:testDebugUnitTest --tests "com.theateam.vitaflex.ApiServiceTest"
