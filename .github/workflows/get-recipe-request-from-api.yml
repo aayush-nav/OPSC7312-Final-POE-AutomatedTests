@@ -26,4 +26,4 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Run unit tests
-        run: ./gradlew test --tests "com.theateam.vitaflex.ApiServiceTest"
+        run: ./gradlew test
