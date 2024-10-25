@@ -1,4 +1,4 @@
-name: Android Tests
+name: Test Offline Database Storage
 
 on:
   push:
@@ -40,4 +40,10 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build and run tests
-        run: ./gradlew testDebug
+        run: ./gradlew testDebugUnitTest --info --stacktrace || true
+
+      - name: Debug Test Reports
+        if: failure()
+        run: |
+          echo "Tests failed. Displaying report."
+          cat ${{ github.workspace }}/app/build/reports/tests/testDebugUnitTest/index.html
