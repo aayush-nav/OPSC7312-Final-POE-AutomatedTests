@@ -6,8 +6,7 @@ env:
 on:
   push:
     branches:
-      - 'release/'
-
+      - 'release/**'   # Matches any branch under 'release/'
   workflow_dispatch:
 
 jobs:
@@ -37,37 +36,41 @@ jobs:
 
       # Run Tests
       - name: Run gradle tests
-        run: ./gradlew test
+        run: ./gradlew test --warning-mode all
 
       # Build APK Debug
       - name: Build APK debug
-        run: ./gradlew assembleDebug
+        run: ./gradlew assembleDebug --warning-mode all
 
       # Build APK Release
       - name: Build APK release
-        run: ./gradlew assembleRelease
+        run: ./gradlew assembleRelease --warning-mode all
 
       # Build AAB Release
       - name: Build AAB release
-        run: ./gradlew ${{ env.main_project_module }}:bundleRelease
+        run: ./gradlew ${{ env.main_project_module }}:bundleRelease --warning-mode all
+
+      # Verify APK and AAB Files
+      - name: List APK and AAB Output Files
+        run: ls -R ${{ env.main_project_module }}/build/outputs/
 
       # Upload APK Debug
       - name: Upload APK Debug
         uses: actions/upload-artifact@v3
         with:
           name: ${{ env.date_today }} - ${{ env.repository_name }} - APK debug
-          path: ${{ env.main_project_module }}/build/outputs/apk/debug/
+          path: ${{ env.main_project_module }}/build/outputs/apk/debug/*.apk
 
       # Upload APK Release
       - name: Upload APK Release
         uses: actions/upload-artifact@v3
         with:
           name: ${{ env.date_today }} - ${{ env.repository_name }} - APK release
-          path: ${{ env.main_project_module }}/build/outputs/apk/release/
+          path: ${{ env.main_project_module }}/build/outputs/apk/release/*.apk
 
       # Upload AAB Release
       - name: Upload AAB Release
         uses: actions/upload-artifact@v3
         with:
           name: ${{ env.date_today }} - ${{ env.repository_name }} - AAB release
-          path: ${{ env.main_project_module }}/build/outputs/bundle/release/
+          path: ${{ env.main_project_module }}/build/outputs/bundle/release/*.aab
