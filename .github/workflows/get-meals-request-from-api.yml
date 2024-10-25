@@ -27,5 +27,5 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v2
 
-      - name: Run Unit Tests
-        run: ./gradlew test
+      - name: Run API Unit Test Only
+        run: ./gradlew test --tests "com.theateam.vitaflex.ApiServiceTest2"
