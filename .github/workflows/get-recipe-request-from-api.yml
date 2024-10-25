@@ -1,4 +1,4 @@
-name: API GET Recipe
+name: API GET Recipe Test
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,12 +17,13 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Set up JDK 11
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v2
         with:
+          distribution: 'zulu'
           java-version: '17'
 
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
 
       - name: Run unit tests
-        run: ./gradlew test
+        run: ./gradlew test --tests "com.theateam.vitaflex.ApiServiceTest"
