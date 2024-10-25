@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F5883F"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+                >
+
+        <ImageButton
+            android:id="@+id/Settings_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/back_arrow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/Settings_heading_textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/settings"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Settings_Account_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/input_text_background"
+                android:ems="10"
+                android:textColor="@color/textColorDefault"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/inter"
+                android:text="@string/account"
+                android:inputType="text"
+                android:paddingStart="50dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/Settings_user_icon_ImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-45dp"
+                android:alpha="0.7"
+                android:src="@drawable/user_icon" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/SettingsAccountImageButton"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="-15dp"
+            android:src="@drawable/arrow_forward"
+            android:background="@drawable/right_cornered"
+            android:backgroundTint="@color/swap"
+            app:tint="@color/swaparrows"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Settigs_Profile_editText"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_text_background"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/inter"
+                android:text="@string/profile_1"
+                android:inputType="text"
+                android:textColor="@color/textColorDefault"
+                android:paddingStart="50dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/Setting_ProfilIcon_ImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-45dp"
+                android:alpha="0.7"
+                android:src="@drawable/profile_red_icon" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/SettingsProfileImageButton"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="-15dp"
+            android:src="@drawable/arrow_forward"
+            android:background="@drawable/right_cornered"
+            android:backgroundTint="@color/swap"
+            app:tint="@color/swaparrows"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Settings_Units_of_Measurements_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_text_background"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/inter"
+                android:text="@string/units_of_measurments"
+                android:inputType="text"
+                android:textColor="@color/textColorDefault"
+                android:paddingStart="50dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/Settings_Measurement_ImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-45dp"
+                android:alpha="0.7"
+                android:src="@drawable/measurement_icon" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/Settings_Units_of_Measurements_ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="-15dp"
+            android:src="@drawable/arrow_forward"
+            android:background="@drawable/right_cornered"
+            android:backgroundTint="@color/swap"
+            app:tint="@color/swaparrows"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/SettingsSupportTextView"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_text_background"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/inter"
+                android:textColor="@color/textColorDefault"
+                android:text="@string/support"
+                android:inputType="none"
+                android:paddingStart="50dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/SettingsSupportImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-45dp"
+                android:alpha="0.7"
+                android:src="@drawable/baseline_contact_support_24" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/SettingsSupportImageButton"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="-15dp"
+            android:src="@drawable/arrow_forward"
+            android:background="@drawable/right_cornered"
+            android:backgroundTint="@color/swap"
+            app:tint="@color/swaparrows"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/SettingsAboutTextView"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_text_background"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/inter"
+                android:textColor="@color/textColorDefault"
+                android:text="@string/about"
+                android:inputType="none"
+                android:paddingStart="50dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/SettingsAboutImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-45dp"
+                android:alpha="0.7"
+                android:src="@drawable/baseline_info_outline_24" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/SettingsAboutImageButton"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="-15dp"
+            android:src="@drawable/arrow_forward"
+            android:background="@drawable/right_cornered"
+            android:backgroundTint="@color/swap"
+            app:tint="@color/swaparrows"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Settings_App_Settings_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_text_background"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/inter"
+                android:text="@string/app_settings_1"
+                android:inputType="text"
+                android:textColor="@color/textColorDefault"
+                android:paddingStart="50dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/Settings_settings_icon_ImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-45dp"
+                android:alpha="0.7"
+                android:src="@drawable/settings_red_icon" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/SettingAppSettingsImageButton"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="-15dp"
+            android:src="@drawable/arrow_forward"
+            android:background="@drawable/right_cornered"
+            android:backgroundTint="@color/swap"
+            app:tint="@color/swaparrows"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeInfoActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F5883F"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/recipeInfo_back_Button"
+            android:layout_width="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/listOfAllRecipes_heading_textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/recipe_information"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/createRecipe1_RecipeName_editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/input_text_background"
+            android:ems="10"
+            android:textSize="20sp"
+            android:textColor="@color/textColorDefault"
+            android:textColorHint="@color/textColorDefault"
+            android:hint="Recipe Name"
+            android:inputType="text"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="#E0E0E0"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/createRecipe2_category_textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/recipe_category"
+            android:textSize="20dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/textColorDefault"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/createRecipe2_category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/edit_text"
+            android:spinnerMode="dropdown"
+            android:entries="@array/recipe_category"/>
+    </LinearLayout>
+
+=
+
+    <Button
+        android:id="@+id/saveRecipeButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#F5883F"
+        android:text="@string/save_recipe"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

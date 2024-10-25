@@ -1,0 +1,73 @@
+name: Generate APK and AAB (Upload to GitHub Action)
+
+env:
+  main_project_module: app
+
+on:
+  push:
+    branches:
+      - 'release/'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Set Current Date As Env Variable
+      - name: Set current date as env variable
+        run: echo "date_today=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      # Set Repository Name As Env Variable
+      - name: Set repository name as env variable
+        run: echo "repository_name=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')" >> $GITHUB_ENV
+
+      - name: Set Up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+          cache: 'gradle'
+
+      - name: Change wrapper permissions
+        run: chmod +x ./gradlew
+
+      # Run Tests
+      - name: Run gradle tests
+        run: ./gradlew test
+
+      # Build APK Debug
+      - name: Build APK debug
+        run: ./gradlew assembleDebug
+
+      # Build APK Release
+      - name: Build APK release
+        run: ./gradlew assembleRelease
+
+      # Build AAB Release
+      - name: Build AAB release
+        run: ./gradlew ${{ env.main_project_module }}:bundleRelease
+
+      # Upload APK Debug
+      - name: Upload APK Debug
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.date_today }} - ${{ env.repository_name }} - APK debug
+          path: ${{ env.main_project_module }}/build/outputs/apk/debug/
+
+      # Upload APK Release
+      - name: Upload APK Release
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.date_today }} - ${{ env.repository_name }} - APK release
+          path: ${{ env.main_project_module }}/build/outputs/apk/release/
+
+      # Upload AAB Release
+      - name: Upload AAB Release
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.date_today }} - ${{ env.repository_name }} - AAB release
+          path: ${{ env.main_project_module }}/build/outputs/bundle/release/

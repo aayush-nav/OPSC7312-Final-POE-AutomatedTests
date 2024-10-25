@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_meal_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meal_type"
+        android:layout_weight="1"
+        android:textColor="@color/textColorDefault"
+        android:textSize="18sp"
+        android:paddingStart="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_meal_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/textColorDefault"
+        android:textSize="18sp"
+        android:text="@string/calories" />
+</LinearLayout>
+
+

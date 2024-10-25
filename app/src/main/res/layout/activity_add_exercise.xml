@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddExerciseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F5883F"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/selectedWorkoutBackBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/back_arrow"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/createWorkoutsHeadingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/add_exercise"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exerciseLabel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/date_of_workout"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/swap"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/dtpExerciseDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_text_background"
+            android:hint="@string/select_a_date"
+            android:focusable="false"
+            android:inputType="none"
+            android:drawableEnd="@drawable/calender_icon"
+            android:drawablePadding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/workoutLabel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/enter_exercise_name"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/swap"
+            android:layout_marginBottom="8dp" />
+
+        <!-- EditText for exercise name -->
+        <EditText
+            android:id="@+id/editTextExerciseName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_text_background"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="@string/exercise_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        >
+
+        <!-- RadioGroup for choosing set/reps or duration -->
+        <RadioGroup
+            android:id="@+id/radioGroupExerciseType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/radioSetsReps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/sets_x_reps" />
+
+            <RadioButton
+                android:id="@+id/radioDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/duration" />
+        </RadioGroup>
+
+        <!-- EditText for sets/reps -->
+        <EditText
+            android:id="@+id/editTextSetsReps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sets_x_reps"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <!-- EditText for duration -->
+        <EditText
+            android:id="@+id/editTextDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="@string/duration_in_minutes"
+            android:visibility="gone" />
+
+        <!-- Button to add exercise -->
+        <Button
+            android:id="@+id/btnAddExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:text="@string/add_exercise" />
+    </LinearLayout>
+
+
+</LinearLayout>

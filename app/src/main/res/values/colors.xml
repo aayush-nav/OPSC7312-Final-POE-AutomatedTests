@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_orange">#F4A261</color>
+    <color name="meals_pink">#EEB5B5</color>
+    <color name="progress_orange">#F0B49A</color>
+    <color name="recipes_green">#9AF0B1</color>
+    <color name="workout_blue">#ABEDF2</color>
+    <color name="settings_yellow">#ffffba</color>
+    <color name="header_orange">#F5883F</color>
+
+    <!-- Add text colors for light theme -->
+    <color name="textPrimary">#000000</color> <!-- Black for light mode text -->
+    <color name="textSecondary">#666666</color> <!-- Softer gray for secondary text -->
+
+    <color name="colorPrimary">#F5883F</color> <!-- Same as header_orange -->
+
+
+    <color name="textColorDefault">#000000</color> <!-- Black text for light mode -->
+    <color name="textColorInverse">#FFFFFF</color> <!-- White text for dark mode (for reference) -->
+
+
+    <color name="swap">#000000</color>
+    <color name="swaparrows">#FFFFFF</color>
+</resources>

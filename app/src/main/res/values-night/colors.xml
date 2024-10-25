@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header_orange">#FF5722</color> <!-- Darker orange for dark mode -->
+    <color name="colorPrimary">#FF5722</color> <!-- Darker orange -->
+    <color name="textPrimary">#FFFFFF</color> <!-- White text for dark mode -->
+
+    <color name="textColorDefault">#000000</color> <!-- Keep text black for better contrast in dark mode -->
+
+    <color name="swap">#FFFFFF</color>
+    <color name="swaparrows">#000000</color>
+</resources>

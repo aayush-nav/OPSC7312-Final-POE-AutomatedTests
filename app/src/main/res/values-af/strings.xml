@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vitaflex</string>
+
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about">Oor</string>
+    <string name="about_us">Oor Ons:</string>
+    <string name="about_message">Welkom by ons Fiksheids- en Dieetopsporing-app,
+        jou persoonlike gesondheidsmaat wat ontwerp is om jou te help om op koers te bly met jou welstandsdoelwitte.
+        Of jy nou gewig wil verloor, jou huidige leefstyl wil handhaaf, of spier wil bou,
+        ons app bied die gereedskap en insigte wat jy nodig het om suksesvol te wees.</string>
+    <string name="our_mission">Ons Sending:</string>
+    <string name="mission_message">By Die A-Span is ons sending om mense in staat te stel om beheer oor hul
+        gesondheid en welstand te neem deur \'n maklike platform wat fiksheidsopsporing,
+        voedingsinsigte en gemeenskapssteun kombineer. Ons glo daarin om gebruikers van die regte data
+        en bronne te voorsien om ingeligte besluite te neem oor hul dieet en oefenroetines, terwyl ons die ervaring genotvol en motiverend hou.</string>
+    <string name="what_we_offer">Wat ons aanbied:</string>
+    <string name="offer_message">Skep, stoor en volg persoonlike resepte en voedselplanne wat
+        op jou persoonlike doelwitte afgestem is. Stel jou fiksheids- en dieetdoelwitte,
+        volg jou vordering en maak aanpassings soos nodig met data-gedrewe insigte.
+        Naadlose Logboek: Teken vinnig jou voedselinname en oefensessies op om op koers te bly met jou dieet- en
+        fiksheidsdoelwitte en \'n uitgebreide databasis van voedingsinligting. Vorderingopsporing:
+        Visualiseer jou reis met gedetailleerde vorderingsverslae wat jou gewig, kalorie-inname, oefenprestasie en meer monitor.</string>
+    <string name="meet_the_a_team">Ontmoet Die A-span:</string>
+    <string name="meet_a_team_message">Ons is Die A-span, \'n toegewyde groep ontwikkelaars en fiksheidsliefhebbers
+        wat glo in die kombinasie van tegnologie en gesonde lewe. Ons doel is om dit vir jou makliker te maak
+        om \'n gesonder leefstyl te lei, ongeag waar jy op jou fiksheidsreis is.
+        Elkeen van ons bring \'n unieke stel vaardighede na die tafel, van toepassingsontwerp tot
+        gebruikerservaring en backend-ontwikkeling, maar saam deel ons een gemeenskaplike doel:
+        om \'n instrument te bou wat dit makliker en meer pret maak om jou gesondheidsdoelwitte te bereik.
+        Dankie dat jy ons app gekies het om jou fiksheidsreis te ondersteun.
+        Ons is voortdurend aan die ontwikkel en verbeter, so bly op hoogte vir opwindende opdaterings, nuwe funksies en meer!</string>
+    <string name="back_btn">terug_knoppie</string>
+
+    <string name="account">Rekening</string>
+    <string name="change_name">Verander Jou Naam:</string>
+    <string name="change_email">Verander Jou E-pos:</string>
+    <string name="change_password">Verander Jou Wagwoord</string>
+    <string name="logout">Teken uit</string>
+    <string name="add_ingredient">Voeg Bestanddeel By</string>
+    <string name="search_for_ingredient">Soek Bestanddele (in Engels)</string>
+    <string name="search">Soek</string>
+    <string name="add_new_meal">Voeg Nuwe Ete By</string>
+    <string name="app_settings">App Instellings</string>
+
+    <string name="app_language">App Taal:</string>
+    <string name="english">Engels</string>
+    <string name="afrikaans">Afrikaans</string>
+    <string name="app_mode">App Modus:</string>
+    <string name="light_mode">Ligte Modus</string>
+    <string name="dark_mode">Donker Modus</string>
+    <string name="workout_notifications">Oefensessie Kennisgewings</string>
+    <string name="set_a_workout_reminder">Stel \'n Oefensessie-herinnering</string>
+    <string name="meal_notifications">Ete Kennisgewings</string>
+
+    <string name="set_a_meal_reminder">Stel \'n Ete-herinnering</string>
+    <string name="save_settings">Stoor Instellings</string>
+    <string name="daily_meals">Daaglikse Etes</string>
+    <string name="previous_week">Vorige Week</string>
+    <string name="date_range">6 Aug 2024 - 12 Aug 2024</string>
+    <string name="next_week">Volgende Week</string>
+    <string name="sunday">So</string>
+    <string name="monday">Ma</string>
+    <string name="tuesday">Di</string>
+    <string name="wednesday">Wo</string>
+
+    <string name="thursday">Do</string>
+    <string name="friday">Vr</string>
+    <string name="saturday">Sa</string>
+    <string name="breakfast">Ontbyt</string>
+    <string name="add">+ Voeg By</string>
+    <string name="lunch">Middagete</string>
+    <string name="snack">Happie</string>
+    <string name="dinner">Aandete</string>
+    <string name="recipes">Resepte</string>
+
+    <string name="create_new_recipe">Skep Nuwe Resep</string>
+    <string name="list_of_ingredients">Lys Van Bestanddele</string>
+    <string name="add_more_ingredients">+ Voeg Meer Bestanddele By</string>
+    <string name="total_calories_0">Totale Kalorieë: 0</string>
+    <string name="continue_1">Gaan voor</string>
+    <string name="welcome_to_vitaflex">Welkom By Vitaflex</string>
+    <string name="log_in">Teken in</string>
+    <string name="email_address">E-pos adres</string>
+    <string name="password">Wagwoord</string>
+
+    <string name="forgot_password">Wagwoord herstel</string>
+    <string name="or">OF</string>
+    <string name="dynamic_health_dynamic_you">Dynamic Health, Dynamic You!</string>
+    <string name="achieve_your_personal_fitness_goals_with_everything_you_need_free_of_charge">
+        Bereik jou persoonlike fiksheidsdoelwitte met alles wat jy nodig het — geen gratis!</string>
+    <string name="get_started">Begin Nou!</string>
+    <string name="sign_up">Teken Aan</string>
+    <string name="meal_plans">Eetplanne</string>
+    <string name="progress">Vordering</string>
+    <string name="settings">Instellings</string>
+
+    <string name="meals">Etes</string>
+    <string name="today">Vandag</string>
+    <string name="this_week">Hierdie Week</string>
+    <string name="profile">Profiel</string>
+    <string name="age">Ouderdom:</string>
+    <string name="_21">21</string>
+    <string name="gender">Geslag:</string>
+    <string name="weight">Gewig:</string>
+    <string name="_63_4_kg">63.4 kg</string>
+
+    <string name="height">Lengte:</string>
+    <string name="_165_cm">165 cm</string>
+    <string name="body_mass_index">Liggaamsmassa-indeks:</string>
+    <string name="_26_3">26.3</string>
+    <string name="progress_1">Vordering</string>
+    <string name="from_date">Van Datum:</string>
+    <string name="select_a_date">Kies \'n datum</string>
+    <string name="to_date">Tot Datum:</string>
+    <string name="display_calories_consumed">Vertoon Verbruikte Kalorieë</string>
+
+    <string name="select_a_date_range_to_view_graph">Kies \'n datumbereik om die grafiek te sien</string>
+    <string name="recipe_details">Resepbesonderhede</string>
+    <string name="recipe_name">Resepnaam</string>
+    <string name="add_meal">Voeg Ete By</string>
+    <string name="recipe_information">Resep Inligting</string>
+    <string name="recipe_category">Resep Kategorie:</string>
+    <string name="save_recipe">Stoor Resep</string>
+    <string name="profile_1">Profiel</string>
+    <string name="units_of_measurments">Eenhede van Mates</string>
+
+    <string name="support">Ondersteuning</string>
+    <string name="app_settings_1">App Instellings</string>
+    <string name="final_step">Laaste Stap!</string>
+    <string name="tell_us_about_yourself">Vertel ons van jouself</string>
+    <string name="gender_1">Geslag</string>
+    <string name="date_of_birth">Geboortedatum</string>
+    <string name="current_weight">Huidige Gewig</string>
+    <string name="enter_weight">Voer Gewig In</string>
+    <string name="current_height">Huidige Lengte</string>
+
+    <string name="enter_height">Voer Lengte In</string>
+    <string name="step_2_of_3">Stap 2 van 3</string>
+    <string name="tell_us_about_your_goals">Vertel Ons Van Jou Doelwitte</string>
+    <string name="weight_goal">Gewigsdoel:</string>
+    <string name="lose">Verloor</string>
+    <string name="gain">Aankom</string>
+    <string name="what_is_your_target_weight">Wat is jou teikengewig?</string>
+    <string name="how_often_do_you_exercise">Hoe gereeld oefen jy?</string>
+    <string name="step_1_of_3">Stap 1 van 3</string>
+
+    <string name="account_details">Rekeningbesonderhede</string>
+    <string name="full_name">Volle Naam</string>
+    <string name="confirm_password">Bevestig Wagwoord</string>
+    <string name="agree_to_ts_and_cs">Stem saam met die Voorwaardes</string>
+    <string name="terms_and_conditions">Voorwaardes</string>
+    <string name="introduction">Inleiding:</string>
+    <string name="intro_message">Welkom by ons Fiksheids- en Dieetopsporingstoepassing.
+        Hierdie Voorwaardes beheer jou gebruik van die App, wat deur Die A-span voorsien word
+        (verwys na as \'ons,\' \'ons,\' of \'ons\'). Deur die App af te laai, toegang te verkry
+        of dit te gebruik, stem jy in om hierdie voorwaardes na te kom.
+        As jy nie met hierdie voorwaardes saamstem nie, gebruik asseblief nie die App nie.</string>
+    <string name="app_overview">App Oorsig:</string>
+    <string name="overview_message">Die App is ontwerp om gebruikers te help om hul fiksheids- en dieetdoelwitte op te spoor.
+        Dit is \'n gratis diens wat beskikbaar is op die Google Play Winkel, met geen aankoop nodig nie.
+        Die App gebruik Firebase as sy databasis om gebruikersdata te stoor en maak
+        gebruik van die CalorieNinja API om voedingsinligting te verskaf.</string>
+
+    <string name="user_accounts">Gebruikersrekeninge:</string>
+    <string name="user_account_message">Jy sal \'n rekening moet skep om toegang te kry tot
+        alle funksies van die App. Wanneer jy \'n rekening skep, stem jy in om akkurate,
+        huidige en volledige inligting te verskaf, jou rekeningbewyse vertroulik en
+        veilig te hou, en ons dadelik in te lig as jy glo daar was ongemagtigde gebruik van jou rekening.
+        Ons is nie aanspreeklik vir enige verlies of skade as gevolg van ongemagtigde toegang tot jou rekening nie.</string>
+    <string name="use_of_the_app">Gebruik van die App:</string>
+    <string name="app_use_message">Deur hierdie App te gebruik, stem jy in om die App vir persoonlike,
+        nie-kommersiële doeleindes te gebruik, nie deel te neem aan enige onwettige,
+        bedrieglike of skadelike aktiwiteite terwyl jy die App gebruik nie,
+        die privaatheid en regte van ander gebruikers te respekteer en geen
+        outomatiese middele te gebruik om data uit die App te onttrek nie.</string>
+    <string name="data_collection_and_privacy">Datainsameling en Privaatheid:</string>
+    <string name="data_collection_message">Ons heg waarde aan jou privaatheid.
+        Alle persoonlike data wat deur die App ingesamel word, word veilig in Firebase gestoor en
+        hanteer volgens ons Privaatheidsbeleid. Deur die App te gebruik, stem jy in dat jou persoonlike data,
+        insluitend maar nie beperk tot naam, e-pos, en fiksheidverwante data, deur Firebase gestoor en verwerk sal word.
+        Ons mag saamgestelde, geanonimiseerde data gebruik vir navorsing en ontwikkeling om die App se dienste te verbeter.</string>
+    <string name="calorieninja_api">CalorieNinja API:</string>
+    <string name="ninja_message">Ons App integreer met die CalorieNinja API om voedingsinligting oor voedselitems te verskaf.
+        Deur die App te gebruik, erken en stem jy in dat die akkuraatheid van voedseldata en
+        kalorie-tellings afhang van die inligting wat deur die CalorieNinja API verskaf word.
+        Ons is nie verantwoordelik vir enige foute, weglatings,
+        of onakkuraathede in die voedingsdata wat deur CalorieNinja verskaf word nie.
+        Jy moet nie uitsluitlik op die inligting wat deur die App verskaf word, staatmaak vir mediese,
+        dieet- of gesondheidsverwante besluite nie.</string>
+    <string name="limitation_of_liability">Beperking van Aanspreeklikheid:</string>
+
+    <string name="limitation_message">Ons streef daarna om akkurate en opdatering inligting te verskaf,
+        maar ons waarborg nie die akkuraatheid of betroubaarheid van die App se inhoud nie.
+        Tot die maksimum mate wat deur die wet toegelaat word, ontken ons alle waarborge, eksplisiet of implisiet,
+        met betrekking tot die App en sy inhoud. Ons is nie aanspreeklik vir enige direkte, indirekte,
+        toevallige, of gevolgskade wat voortspruit uit jou gebruik van die App nie, insluitend maar nie
+        beperk tot gesondheidsverwante kwessies wat ontstaan uit staatmaak op voedingsinligting.</string>
+    <string name="units_of_measurement">Eenhede van Meting</string>
+    <string name="kilograms_kg">Kilogram (KG)</string>
+    <string name="pounds_lbs">Ponde (lbs)</string>
+    <string name="calories">Kalorieë:</string>
+    <string name="calories_cal">Kalorieë (cal)</string>
+    <string name="kilojoules_kj">Kilojoules (kj)</string>
+    <string name="select_a_recipe">Kies \'n Resep:</string>
+    <string name="search_other_food_item">Soek Ander Voedselitem:</string>
+
+    <string name="search_item">Soek Item</string>
+    <string name="add_item">Voeg Item Toe</string>
+    <string name="meal_type">Etenstipe</string>
+    <string name="ingredient_name">Bestandsdeelnaam</string>
+    <string name="date">Datum</string>
+    <string name="meal_name">Etennaam</string>
+    <string name="hello">Hallo</string>
+    <string name="enter_new_email">Voer nuwe e-pos in</string>
+    <string name="enter_current_password">Voer huidige wagwoord in</string>
+
+    <string name="existing_recipes">Bestaande Resepte</string>
+    <string name="other_food_items">Ander Kos Items</string>
+    <string name="meal_added_successfully">Ete is suksesvol bygevoeg</string>
+    <string name="recipe_added_successfully">Resep suksesvol bygevoeg: %1$s</string>
+    <string name="failed_to_add_meal">Kon nie ete byvoeg nie</string>
+    <string name="error">Fout: %1$s</string>
+    <string name="meal_added_successfully_1">Ete is suksesvol bygevoeg</string>
+
+    <string name="total_calories_cal">Totale Kalorieë: %1$s cal</string>
+    <string name="total_kilojoules_kj">Totale Kilojoules: %1$s kJ</string>
+    <string name="please_enter_a_name">Voer asseblief \'n naam in</string>
+    <string name="please_enter_an_email">Voer asseblief \'n e-pos in</string>
+    <string name="please_enter_an_email_1">Voer asseblief \'n e-pos in</string>
+    <string name="email_updated_successfully_in_firebase_authentication">E-pos suksesvol opgedateer in Firebase-verifikasie</string>
+    <string name="email_updated_successfully">E-pos suksesvol opgedateer</string>
+    <string name="email_update_failed">E-posopdatering het misluk: %1$s</string>
+    <string name="failed_to_update_email_in_firebase_authentication">Kon nie e-pos in Firebase-verifikasie opdateer nie: %1$s</string>
+
+    <string name="there_is_no_currently_signed_in_user">Daar is tans geen aangemelde gebruiker nie</string>
+    <string name="name_updated_successfully">Naam suksesvol opgedateer</string>
+    <string name="failed_to_update_name">Kon nie naam opdateer nie</string>
+    <string name="password_has_been_reset">Wagwoord is teruggestel</string>
+    <string name="password_reset_failed">Wagwoord-terugstelling het misluk</string>
+    <string name="settings_saved">Instellings gestoor</string>
+    <string name="you_have_selected">Jy het %1$s gekies</string>
+    <string name="failed_to_load_recipes">Kon nie resepte laai nie</string>
+    <string name="error_1">Fout: %1$s</string>
+
+    <string name="please_ensure_that_all_fields_have_been_entered">Maak asseblief seker dat al die velde ingevul is</string>
+    <string name="log_in_successful">Aanmelding suksesvol %1$s</string>
+    <string name="log_in_failed">Aanmelding het misluk</string>
+    <string name="sign_in_failed_please_try_again">Aantekening het misluk. Probeer asseblief weer. %1$s</string>
+    <string name="log_in_successful_1">Aanmelding suksesvol</string>
+    <string name="account_does_not_exist">Rekening bestaan nie</string>
+    <string name="failed_to_fetch_meals_for_today">Kon nie vandag se etes kry nie</string>
+    <string name="error_2">Fout: %1$s</string>
+    <string name="user_email_not_found">Gebruiker se e-posadres nie gevind nie</string>
+
+
+    <string name="failed_to_fetch_meals_for_this_week">Kon nie die week se etes kry nie</string>
+    <string name="user_email_not_found_1">Gebruiker se e-posadres nie gevind nie</string>
+    <string name="failed_to_fetch_all_meals">Kon nie alle etes kry nie</string>
+    <string name="error_4">Fout: %1$s</string>
+    <string name="user_email_not_found_3">Gebruiker se e-posadres nie gevind nie</string>
+    <string name="meal_added_successfully_2">Ete suksesvol bygevoeg!</string>
+    <string name="please_enter_an_age">Vul asseblief \'n ouderdom in</string>
+    <string name="please_enter_a_gender">Vul asseblief \'n geslag in</string>
+    <string name="please_enter_a_weight">Vul asseblief \'n gewig in</string>
+
+
+    <string name="please_enter_a_height">Vul asseblief \'n lengte in</string>
+    <string name="height_updated_successfully">Lengte suksesvol opgedateer</string>
+    <string name="height_update_failed">Lengte-opdatering het misluk: %1$s</string>
+    <string name="weight_updated_successfully">Gewig suksesvol opgedateer</string>
+    <string name="weight_update_failed">Gewig-opdatering het misluk: %1$s</string>
+    <string name="gender_updated_successfully">Geslag suksesvol opgedateer</string>
+    <string name="gender_update_failed">Geslag-opdatering het misluk: %1$s</string>
+    <string name="age_updated_successfully">Ouderdom suksesvol opgedateer</string>
+    <string name="age_update_failed">Ouderdom-opdatering het misluk: %1$s</string>
+
+
+    <string name="recipe_added_successfully_3">Resep suksesvol bygevoeg</string>
+    <string name="failed_to_add_recipe">Kon nie resep byvoeg nie</string>
+    <string name="error_5">Fout: %1$s</string>
+    <string name="you_have_selected_2">Jy het gekies %1$s</string>
+    <string name="please_enter_valid_weight_and_height">Vul asseblief \'n geldige gewig en lengte in</string>
+    <string name="database_write_failed">Databasisinskrywing het misluk: %1$s</string>
+    <string name="you_have_selected_3">"Jy het gekies "</string>
+    <string name="database_write_failed_3">Databasisinskrywing het misluk: %1$s</string>
+    <string name="please_ensure_that_all_fields_have_been_entered_1">Maak asseblief seker dat alle velde ingevul is</string>
+
+    <string name="special_characters">Maak asseblief seker dat die wagwoord minstens 8 karakters lank is en spesiale karakters insluit</string>
+    <string name="error_the_passwords_do_not_match">Fout, die wagwoorde stem nie ooreen nie</string>
+    <string name="sign_in_failed_please_try_again_1">Aantekening het misluk. Probeer asseblief weer.</string>
+    <string name="authentication_successful">Verifikasie suksesvol.</string>
+    <string name="authentication_failed">Verifikasie het misluk.</string>
+    <string name="sign_up_successful">Registrasie suksesvol</string>
+    <string name="sign_up_failed">Registrasie het misluk</string>
+    <string name="database_write_failed_1">Databasisinskrywing het misluk: %1$s</string>
+
+
+    <string name="workouts">Oefeninge</string>
+    <string name="add_exercise">Voeg Oefening By</string>
+    <string name="date_of_workout">Datum van Oefening</string>
+    <string name="enter_exercise_name">Voer Oefening Naam In</string>
+    <string name="exercise_name">Oefening Naam</string>
+    <string name="sets_x_reps">Stelle x Herhalings</string>
+    <string name="duration">Tydsduur</string>
+    <string name="duration_in_minutes">Tydsduur (in minute)</string>
+    <string name="online">Aanlyn</string>
+    <string name="log_new_exercise">+ Teken Nuwe Oefening aan</string>
+    <string name="connected_to_the_internet">Gekoppel aan die Internet</string>
+    <string name="offline_go_back_online_to_sync_data">Vanlyn: Gaan aanlyn om data te sinkroniseer</string>
+    <string name="online_1">Aanlyn</string>
+
+
+    <string-array name="recipe_category">
+        <item>Ontbyt</item>
+        <item>Middagete</item>
+        <item>Aandete</item>
+        <item>Happie</item>
+    </string-array>
+
+</resources>

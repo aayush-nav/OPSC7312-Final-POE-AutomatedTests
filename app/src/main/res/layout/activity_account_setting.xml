@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountSettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F5883F"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/Account_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/back_arrow"
+            android:contentDescription="@string/back_btn"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/Account_heading_textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/account"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/Account_Name_TextView"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="8.5"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/left_cornered_grey"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/textColorDefault"
+            android:text="@string/change_name"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/Account_Change_Name_ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1.5"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/arrow_forward"
+            android:background="@drawable/right_cornered_grey"
+            android:backgroundTint="@color/swap"
+            app:tint="@color/swaparrows"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/Account_Email_TextView"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="8.5"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/left_cornered_grey"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/textColorDefault"
+            android:text="@string/change_email"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/Account_Change_Email_ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1.5"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/arrow_forward"
+            android:background="@drawable/right_cornered_grey"
+            android:backgroundTint="@color/swap"
+            app:tint="@color/swaparrows"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/Account_Change_Password_TextView"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="8.5"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/left_cornered_grey"
+            android:fontFamily="@font/inter"
+            android:text="@string/change_password"
+            android:textColor="@color/textColorDefault"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/Account_Change_Password_ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1.5"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/arrow_forward"
+            android:background="@drawable/right_cornered_grey"
+            android:backgroundTint="@color/swap"
+            app:tint="@color/swaparrows"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Account_Logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#F5883F"
+        android:text="@string/logout"
+        android:textSize="24sp" />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "846530981193",
+    "firebase_url": "https://vitaflexapp-default-rtdb.firebaseio.com",
+    "project_id": "vitaflexapp",
+    "storage_bucket": "vitaflexapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846530981193:android:ab4c01e938534272bb3e98",
+        "android_client_info": {
+          "package_name": "com.example.vitaflexapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846530981193-nv9t8ac3d0fqkfeua01680h950fu37d4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vitaflexapp",
+            "certificate_hash": "9c032c86908516ad3694e960662f40336e991246"
+          }
+        },
+        {
+          "client_id": "846530981193-q5cp60gdr56m4cor6tdcldnmncp5jvuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm_M4-racp8ICs06x3ukjHubuJFF8pGtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846530981193-jsgeff8r71qs7rltrjdet6bcmloj5f8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846530981193:android:4ee00b68583e9e1cbb3e98",
+        "android_client_info": {
+          "package_name": "com.theateam.vitaflex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846530981193-5ur3k0t69aegipka7m07ojmv2gbf7tf3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.theateam.vitaflex",
+            "certificate_hash": "84eb5184ae7736a6c11e863acb744311f16dae8e"
+          }
+        },
+        {
+          "client_id": "846530981193-q5cp60gdr56m4cor6tdcldnmncp5jvuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm_M4-racp8ICs06x3ukjHubuJFF8pGtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846530981193-jsgeff8r71qs7rltrjdet6bcmloj5f8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

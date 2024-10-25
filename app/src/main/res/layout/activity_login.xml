@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageButton
+            android:id="@+id/login_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            app:tint="@color/swap"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back_arrow"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/startUpScreen_VitaflexLogo_imageView"
+            android:layout_width="180sp"
+            android:layout_height="180sp"
+            android:layout_centerInParent="true"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            app:srcCompat="@drawable/vitaflex_full_logo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/goals_frame_orange">
+
+                    <TextView
+                        android:id="@+id/loginScreen_welcome_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:text="@string/welcome_to_vitaflex"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/loginScreen_loginHeading_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:text="@string/log_in"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="80dp"
+                            android:background="@drawable/goals_frame_white">
+
+                            <EditText
+                                android:id="@+id/loginScreen_email_editText"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="25dp"
+                                android:background="@drawable/input_text_background"
+                                android:ems="10"
+                                android:drawablePadding="10dp"
+                                android:drawableStart="@drawable/user_icon"
+                                android:hint="@string/email_address"
+                                android:textColor="@color/textColorDefault"
+                                android:textColorHint="@color/textColorDefault"
+                                android:inputType="text" />
+
+
+                            <EditText
+                                android:id="@+id/loginScreen_password_editTextPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="120dp"
+                                android:layout_marginRight="25dp"
+                                android:background="@drawable/input_text_background"
+                                android:drawableStart="@drawable/lock_icon"
+                                android:drawablePadding="10dp"
+                                android:ems="10"
+                                android:hint="@string/password"
+                                android:inputType="textPassword"
+                                android:textColor="@color/textColorDefault"
+                                android:textColorHint="@color/textColorDefault" />
+
+                            <Button
+                                android:id="@+id/loginScreen_forgotPassword_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="160dp"
+                                android:layout_marginTop="170dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="#DDDDDD"
+                                android:text="@string/forgot_password"
+                                android:textColor="@android:color/holo_blue_dark" />
+
+                            <Button
+                                android:id="@+id/loginScreen_login_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="225dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="25dp"
+                                android:backgroundTint="#F5883F"
+                                android:text="@string/log_in"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/loginScreen_loginBiometricsbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="295dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="25dp"
+                                android:backgroundTint="#F5883F"
+                                android:text="Login with Biometics"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/loginScreen_Or_textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="360dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="25dp"
+                                android:text="@string/or"
+                                android:textAlignment="center"
+                                android:textSize="20sp" />
+
+                            <ImageButton
+                                android:id="@+id/loginScreen_signInWithGoogle_imageButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="390dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="25dp"
+                                android:backgroundTint="#FFFFFF"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/google_sign_up_logo"
+                                tools:ignore="SpeakableTextPresentCheck" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
