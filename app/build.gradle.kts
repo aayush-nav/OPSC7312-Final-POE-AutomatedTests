@@ -74,6 +74,7 @@ dependencies {
     implementation(libs.firebase.firestore)
     implementation(libs.androidx.biometric.ktx)
     implementation(libs.androidx.junit.ktx)
+    implementation(libs.androidx.uiautomator)
 
     // Unit testing dependencies
     testImplementation ("junit:junit:4.13.2")
