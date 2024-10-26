@@ -1,4 +1,4 @@
-name: API Response Time Test
+name: API GET Meals Response Time Test
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  test:
+  test-api-response:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,12 +25,12 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
 
-      - name: Run unit tests
-        run: ./gradlew testDebugUnitTest
+      - name: Run API Response Time Unit Test
+        run: ./gradlew testDebugUnitTest --tests "com.theateam.vitaflex.ApiServiceResponseTimeTest"
 
       - name: Upload Test Results
         if: always()
         uses: actions/upload-artifact@v3
         with:
-          name: test-report
+          name: api-response-time-test-report
           path: app/build/reports/tests/testDebugUnitTest
