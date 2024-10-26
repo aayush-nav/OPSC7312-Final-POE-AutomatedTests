@@ -2,11 +2,14 @@ package com.theateam.vitaflex
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
+import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.After
-import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
+import org.junit.runner.RunWith
+import org.junit.Assert.*
 
+@RunWith(AndroidJUnit4::class)
 class InputValidationTest {
     private lateinit var dbHelper: DatabaseHelper
 
