@@ -25,8 +25,8 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
 
-      - name: Run unit tests
-        run: ./gradlew testDebugUnitTest
+      - name: Run Network Connectivity Test
+        run: ./gradlew testDebugUnitTest --tests "com.theateam.vitaflex.NetworkConnectivityTest"
 
       - name: Upload Test Results
         if: always()
