@@ -85,6 +85,10 @@ dependencies {
     // Coroutines for testing (if using coroutines)
     testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.2")
 
+    testImplementation ("org.mockito:mockito-core:4.0.0")
+    testImplementation ("org.mockito:mockito-inline:4.0.0")
+
+
     // Unit Testing
     testImplementation ("org.mockito:mockito-core:3.11.2")
     testImplementation ("org.mockito:mockito-inline:3.11.2")

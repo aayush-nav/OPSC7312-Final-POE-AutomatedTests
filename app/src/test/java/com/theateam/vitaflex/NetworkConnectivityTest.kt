@@ -3,10 +3,9 @@ package com.theateam.vitaflex
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkInfo
-import androidx.test.core.app.ApplicationProvider
-import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
+import org.junit.Assert.assertTrue
 import org.mockito.Mockito
 
 class NetworkConnectivityTest {
@@ -15,8 +14,13 @@ class NetworkConnectivityTest {
 
     @Before
     fun setUp() {
-        context = ApplicationProvider.getApplicationContext<Context>()
+        // Create a mock context
+        context = Mockito.mock(Context::class.java)
+
+        // Create a mock connectivity manager
         connectivityManager = Mockito.mock(ConnectivityManager::class.java)
+
+        // Mock the getSystemService call to return the mocked ConnectivityManager
         Mockito.`when`(context.getSystemService(Context.CONNECTIVITY_SERVICE)).thenReturn(connectivityManager)
     }
 
